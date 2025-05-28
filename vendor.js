@@ -43,7 +43,7 @@ router.post("/vendor/login", passport.authenticate("vendor",
     successRedirect: "/services",
     failureRedirect: "/vendor/login",
     failureFlash: "Incorrect username or Password",
-    successFlash: "Welcome to Handyman!"
+    successFlash: "Welcome to sakhi!"
   }), function (req, res) {
   });
 
@@ -58,7 +58,7 @@ router.post("/vendor/login", passport.authenticate("vendor",
 //       return res.redirect("/vendor/login");
 //     }
 //     if(!vendor.isApproved){
-//       req.flash("error", "Your request is not approved! Please wait for Approval. Our Handyman team will contact you soon.");
+//       req.flash("error", "Your request is not approved! Please wait for Approval. Our sakhi team will contact you soon.");
 //       return res.redirect("/vendor/login");
 //     }
 //     req.logIn(vendor, function (err) {
