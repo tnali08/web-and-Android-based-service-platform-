@@ -268,7 +268,7 @@ router.post("/vendor/forgot", function (req, res, next) {
       var mailOptions = {
         to: user.email,
         from: "YOUR_EMAIL_ID",
-        subject: "Handyman Password Reset",
+        subject: "Sakhi Password Reset",
         text: "You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n" +
           "Please click on the following link, or paste this into your browser to complete the process:\n\n" +
           "http://" + req.headers.host + "/vendor/reset/" + token + "\n\n" +
@@ -372,7 +372,7 @@ router.get("/:service/:subservice/:id", middleware.isLoggedIn, function (req, re
           req.flash("error", "Not Allowed!");
           res.redirect("/services");
         } else {
-          res.render("vendor/v_show", { vendor: foundVendor, error: "Your profile is not verified yet and will not be visible to others. Handyman team will contact you soon for verification." });
+          res.render("vendor/v_show", { vendor: foundVendor, error: "Your profile is not verified yet and will not be visible to others. sakhi team will contact you soon for verification." });
         }
       }
     } else {
