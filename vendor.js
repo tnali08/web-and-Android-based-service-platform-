@@ -333,7 +333,7 @@ router.post("/vendor/reset/:token", function (req, res) {
       var mailOptions = {
         to: user.email,
         from: "YOUR_EMAIL_ID",
-        subject: "Handyman: Your password has been changed",
+        subject: "SAKHI: Your password has been changed",
         text: "Hello,\n\n" +
           "This is a confirmation that the password for your account " + user.email + " has just been changed.\n"
       };
